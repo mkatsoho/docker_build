@@ -1,9 +1,9 @@
 
 
 ## base image
-FROM arm64v8/python:3.8
+#FROM arm64v8/python:3.8
 #FROM yinhe/arm64v8_py38:latest
-#FROM bistu/arm64v8_py39:latest
+FROM bistu/arm64v8_py39:latest
 
 
 ## working dir 
@@ -52,5 +52,4 @@ EXPOSE 9090
 
 
 ## start app
-ENTRYPOINT /bin/bash -c "while true; ./run_server.sh; sleep 1; done"
-~                                                                             
+ENTRYPOINT /bin/bash -c "while true; do ./run_server.sh; sleep 1; done"
