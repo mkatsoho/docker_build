@@ -52,4 +52,4 @@ EXPOSE 9090
 
 
 ## start app
-ENTRYPOINT /bin/bash -c "while true; do ./run_server.sh; sleep 1; done"
+ENTRYPOINT /bin/bash -c "while true; do bash ./run_server.sh; sleep 1; done"
